@@ -11,6 +11,14 @@
 		F56D194D2A7DF3F5001EFC24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D194C2A7DF3F5001EFC24 /* ContentView.swift */; };
 		F56D194F2A7DF3F7001EFC24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56D194E2A7DF3F7001EFC24 /* Assets.xcassets */; };
 		F56D19522A7DF3F7001EFC24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56D19512A7DF3F7001EFC24 /* Preview Assets.xcassets */; };
+		F56D19592A7DF74A001EFC24 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D19582A7DF74A001EFC24 /* CardView.swift */; };
+		F56D195C2A7DF8D3001EFC24 /* CustomBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D195B2A7DF8D3001EFC24 /* CustomBackgroundColor.swift */; };
+		F56D195F2A7DFBD3001EFC24 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D195E2A7DFBD3001EFC24 /* ColorExtension.swift */; };
+		F56D19612A7E009F001EFC24 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D19602A7E009F001EFC24 /* CustomButtonView.swift */; };
+		F5FF62A82A803EC800F77481 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF62A72A803EC800F77481 /* GradientButtonStyle.swift */; };
+		F5FF62AA2A80421500F77481 /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF62A92A80421500F77481 /* CustomCircleView.swift */; };
+		F5FF62AC2A8042F400F77481 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF62AB2A8042F400F77481 /* MotionAnimationView.swift */; };
+		F5FF62AF2A80499F00F77481 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF62AE2A80499F00F77481 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		F56D194C2A7DF3F5001EFC24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F56D194E2A7DF3F7001EFC24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56D19512A7DF3F7001EFC24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F56D19582A7DF74A001EFC24 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F56D195B2A7DF8D3001EFC24 /* CustomBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundColor.swift; sourceTree = "<group>"; };
+		F56D195E2A7DFBD3001EFC24 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		F56D19602A7E009F001EFC24 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		F5FF62A72A803EC800F77481 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
+		F5FF62A92A80421500F77481 /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
+		F5FF62AB2A8042F400F77481 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
+		F5FF62AE2A80499F00F77481 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				F56D194A2A7DF3F5001EFC24 /* HikeApp.swift */,
-				F56D194C2A7DF3F5001EFC24 /* ContentView.swift */,
+				F5FF62AD2A80497B00F77481 /* Screen */,
 				F56D194E2A7DF3F7001EFC24 /* Assets.xcassets */,
+				F56D195D2A7DFBB2001EFC24 /* Utility */,
 				F56D19502A7DF3F7001EFC24 /* Preview Content */,
+				F56D195A2A7DF8BB001EFC24 /* Component */,
 			);
 			path = Hike;
 			sourceTree = "<group>";
@@ -65,6 +83,36 @@
 				F56D19512A7DF3F7001EFC24 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F56D195A2A7DF8BB001EFC24 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F56D19582A7DF74A001EFC24 /* CardView.swift */,
+				F56D195B2A7DF8D3001EFC24 /* CustomBackgroundColor.swift */,
+				F56D19602A7E009F001EFC24 /* CustomButtonView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		F56D195D2A7DFBB2001EFC24 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F56D195E2A7DFBD3001EFC24 /* ColorExtension.swift */,
+				F5FF62A72A803EC800F77481 /* GradientButtonStyle.swift */,
+				F5FF62A92A80421500F77481 /* CustomCircleView.swift */,
+				F5FF62AB2A8042F400F77481 /* MotionAnimationView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F5FF62AD2A80497B00F77481 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				F56D194C2A7DF3F5001EFC24 /* ContentView.swift */,
+				F5FF62AE2A80499F00F77481 /* SettingsView.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +186,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F56D194D2A7DF3F5001EFC24 /* ContentView.swift in Sources */,
+				F5FF62AA2A80421500F77481 /* CustomCircleView.swift in Sources */,
+				F56D19592A7DF74A001EFC24 /* CardView.swift in Sources */,
 				F56D194B2A7DF3F5001EFC24 /* HikeApp.swift in Sources */,
+				F56D19612A7E009F001EFC24 /* CustomButtonView.swift in Sources */,
+				F5FF62AF2A80499F00F77481 /* SettingsView.swift in Sources */,
+				F5FF62A82A803EC800F77481 /* GradientButtonStyle.swift in Sources */,
+				F5FF62AC2A8042F400F77481 /* MotionAnimationView.swift in Sources */,
+				F56D195C2A7DF8D3001EFC24 /* CustomBackgroundColor.swift in Sources */,
+				F56D195F2A7DFBD3001EFC24 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
