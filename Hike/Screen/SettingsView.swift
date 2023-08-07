@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    private var alternateAppIcons:[String] = [
+        "AppIcon-MagnifyingGlass",
+        "AppIcon-Camera",
+        "AppIcon-Map",
+        "AppIcon-Campfire",
+        "AppIcon-Backpack",
+        "AppIcon-Mushroom",
+    ]
+    
     var body: some View {
         List {
             //MARK : - SECTION
@@ -55,6 +65,65 @@ struct SettingsView: View {
                 
             }
             .listRowSeparator(.hidden)
+            
+            
+            Section(header:Text("Alternate Icons")){
+                ScrollView(.horizontal,showsIndicators: false){
+                    
+                    HStack(spacing: 12){
+                        ForEach(alternateAppIcons.indices,id: \.self) { item in
+                            Button{
+                                UIApplication.shared.setAlternateIconName(alternateAppIcons[item]) {
+                                    error in
+                                    if error != nil {
+                                        print("Failed request to update")
+                                    }
+                                }
+                            } label: {
+                                Image("\(alternateAppIcons[item])-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80,height: 80)
+                                    .cornerRadius(16)
+                            }
+                            .buttonStyle(.borderless)
+                        }
+                    }
+                    
+                } //: SCROLL VIEW
+                .padding(.top,12)
+                
+                Text("Choose your favorite icon to the collection above")
+                    .frame(minWidth: 0,maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.secondary)
+                    .font(.footnote)
+                    .padding(.bottom,12)
+            }
+            .listRowSeparator(.hidden)
+            
+            
+            Section(header:Text("ABOUT THE APP"),
+                    footer: HStack{
+                Spacer()
+                Text("Copyright All right reserved.")
+                Spacer()
+            }
+                .padding(.vertical,8)
+            ) {
+                CustomListRowView(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "Hike", rowTintColor: .blue)
+                
+                CustomListRowView(rowLabel: "Compatible", rowIcon: "info.circle", rowContent: "iOS, iPadOS", rowTintColor: .red)
+                
+                CustomListRowView(rowLabel: "Technology", rowIcon: "swift", rowContent: "Swift", rowTintColor: .orange)
+                
+                CustomListRowView(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0", rowTintColor: .purple)
+                
+                CustomListRowView(rowLabel: "Developer", rowIcon: "ellipsis.curlybraces", rowContent: "Marcelo Moresco", rowTintColor: .mint)
+                
+                CustomListRowView(rowLabel: "Website", rowIcon: "globe", rowContent: "https://twitter.com/home", rowTintColor: .indigo)
+                
+            }
         }
         
     }

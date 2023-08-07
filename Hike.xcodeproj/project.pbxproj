@@ -19,6 +19,7 @@
 		F5FF62AA2A80421500F77481 /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF62A92A80421500F77481 /* CustomCircleView.swift */; };
 		F5FF62AC2A8042F400F77481 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF62AB2A8042F400F77481 /* MotionAnimationView.swift */; };
 		F5FF62AF2A80499F00F77481 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF62AE2A80499F00F77481 /* SettingsView.swift */; };
+		F5FF62B12A80836E00F77481 /* CustomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FF62B02A80836E00F77481 /* CustomListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		F5FF62A92A80421500F77481 /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
 		F5FF62AB2A8042F400F77481 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		F5FF62AE2A80499F00F77481 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F5FF62B02A80836E00F77481 /* CustomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				F56D194A2A7DF3F5001EFC24 /* HikeApp.swift */,
-				F5FF62AD2A80497B00F77481 /* Screen */,
 				F56D194E2A7DF3F7001EFC24 /* Assets.xcassets */,
+				F5FF62AD2A80497B00F77481 /* Screen */,
 				F56D195D2A7DFBB2001EFC24 /* Utility */,
 				F56D19502A7DF3F7001EFC24 /* Preview Content */,
 				F56D195A2A7DF8BB001EFC24 /* Component */,
@@ -91,6 +93,7 @@
 				F56D19582A7DF74A001EFC24 /* CardView.swift */,
 				F56D195B2A7DF8D3001EFC24 /* CustomBackgroundColor.swift */,
 				F56D19602A7E009F001EFC24 /* CustomButtonView.swift */,
+				F5FF62B02A80836E00F77481 /* CustomListRowView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				F56D194D2A7DF3F5001EFC24 /* ContentView.swift in Sources */,
 				F5FF62AA2A80421500F77481 /* CustomCircleView.swift in Sources */,
+				F5FF62B12A80836E00F77481 /* CustomListRowView.swift in Sources */,
 				F56D19592A7DF74A001EFC24 /* CardView.swift in Sources */,
 				F56D194B2A7DF3F5001EFC24 /* HikeApp.swift in Sources */,
 				F56D19612A7E009F001EFC24 /* CustomButtonView.swift in Sources */,
@@ -320,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hike/Preview Content\"";
@@ -349,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hike/Preview Content\"";
